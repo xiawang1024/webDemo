@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" /> 
 	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -15,290 +16,288 @@
       <![endif]-->
   </head>
   <body>
-  	<div class="tips hidden-xs bg-primary">
-  		<p class="tip pull-left">冰糖品牌：  冰糖程序员  |  桃花岛</p>
-  		<p class="tip pull-right">改变中国IT教育，我们正在行动     全国咨询热线：400-400-4000
-  			冰糖播客</p>
-  		</div>
-  		<div class="header-nav">
-  			<nav class="navbar navbar-inverse hd-nav" role="navigation">
-  				<div class="container">
-  					<!-- Brand and toggle get grouped for better mobile display -->
-  					<div class="navbar-header">
-  						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-  							<span class="sr-only">Toggle navigation</span>
-  							<span class="icon-bar"></span>
-  							<span class="icon-bar"></span>
-  							<span class="icon-bar"></span>
-  						</button>
-  						<a class="navbar-brand" href="#">
-  							<h1>冰糖学院</h1>
-  						</a>
-  					</div>
-  					<!-- Collect the nav links, forms, and other content for toggling -->
-  					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-  						<ul class="nav navbar-nav">
-  							<li class="active"><a href="#">免费学习资源</a></li>
-  							<li><a href="#">课程中心</a></li>
-  							<li><a href="#">原创教材</a></li>
-  							<li><a href="#">学员故事</a></li>
-  							<li><a href="#">冰糖社区</a></li>
-  						</ul>
-  						<form class="navbar-form navbar-right " role="search">
-  							<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#login">登陆</button>
-  							<button type="button" class="btn btn-info btn-sm ">免费注册</button>
-  							<!-- Modal -->
-  							<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  								<div class="modal-dialog login">
-  									<div class="modal-content">
-  										<div class="modal-header">
-  											<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-  											<h4 class="modal-title text-center" id="myModalLabel">冰糖学院 欢迎您登陆</h4>
-  										</div>
-  										<div class="modal-body">
-  											<form class="form" role="form">
-  											<div class="">
-  													<label for="inputEmail3" class="col-sm-2 control-label text-right">账号</label>
-  													<div class="col-sm-10">
-  														<input type="text" class="form-control" id="inputEmail3" placeholder="账号/手机号/邮箱">
-  													</div>
-  												</div>
-  												<div class="">
-  													<label for="inputPassword3" class="col-sm-2 control-label">密码</label>
-  													<div class="col-sm-10">
-  														<input type="password" class="form-control" id="inputPassword3" placeholder="密码">
-  													</div>
-  												</div>
-  												<div class="">
-  													<div class="col-sm-offset-2 col-sm-10">
-  														<div class="checkbox">
-  															<label>
-  																<input type="checkbox"> 记住账号和密码
-  															</label>
-  														</div>
-  													</div>
-  												</div>
-  												<div> 
-  													
-  												</div>
-  											</form>
 
-  										</div>
-  										<div class="modal-footer"> 
-  											<div class="col-sm-offset-2 col-sm-10">
-  															<button type="button" class="btn btn-success btn-sm" data-dismiss="modal">登陆</button>
-  											<button type="button" class="btn btn-info btn-sm">免费注册</button>
-  													</div>
-  										</div>
-
-  									</div>
-  								</div>
+  	<!-- 登陆框 -->
+  	<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  		<div class="modal-dialog">
+  			<div class="modal-content">
+  				<div class="modal-header">
+  					<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  					<h4 class="modal-title h4 text-info">冰糖学院欢迎您登陆</h4>
+  				</div>
+  				<div class="modal-body">
+  					<form class="form-horizontal" role="form">
+  						<div class="form-group">
+  							<label for="inputEmail3" class="col-sm-2 control-label">账号</label>
+  							<div class="col-sm-8">
+  								<input type="email" class="form-control" id="inputEmail3" placeholder="账号/手机号/邮箱">
   							</div>
-  						</form>
-  					</div><!-- /.navbar-collapse -->
-  				</div><!-- /.container-fluid -->
-  			</nav>
-
-  		</div>
-  		<div class="header-body">
-  			<div class="container hd-container">
-  				<div class="row">
-  					<div class="col-md-9 col-xs-12">
-  						<div class="swiper-container">
-  							<div class="swiper-wrapper">
-  								<div class="swiper-slide"><img src="imgs/banner0.jpg" class="img-responsive" alt="Responsive image"></div>
-  								<div class="swiper-slide"><img src="imgs/banner1.jpg" class="img-responsive" alt="Responsive image"></div>
-  								<div class="swiper-slide"><img src="imgs/banner2.jpg" class="img-responsive" alt="Responsive image"></div>
-  								<div class="swiper-slide"><img src="imgs/banner3.jpg" class="img-responsive" alt="Responsive image"></div>
-  							</div>
-  							<!-- Add Pagination -->
-  							<div class="swiper-pagination"></div>
   						</div>
-  					</div>
-  					<div class="col-md-3 col-sm-12 hidden-xs">
-  						<div class="panel panel-primary hd-body-slide">
-  							<div class="panel-heading">信息港</div>
-  							<div class="panel-body xinxi">
-  								<div class="list-group">
-  									<a href="#" class="list-group-item first"> 2016年冰糖学院各学科学费价格表</a>
-  									<a href="#" class="list-group-item">全国新开校区，前三期立减1998！</a>
-  									<a href="#" class="list-group-item">零基础，1元上30天完整IT入门课程</a>
-  									<a href="#" class="list-group-item">UI设计打造会代码的全能设计师</a>
-  									<a href="#" class="list-group-item">打造Python前后端全栈开发工程师</a>
-  									<a href="#" class="list-group-item">Android入门易成长快，岂止高薪！</a>
-  									<a href="#" class="list-group-item">PHP助你快速入门，就业冲击10k+</a>
-  									<a href="#" class="list-group-item">iOS，4个月即可引领IT“薪”革命</a>
-  									<a href="#" class="list-group-item last">延续40年经典—永不过时的C/C++</a>
+  						<div class="form-group">
+  							<label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+  							<div class="col-sm-8">
+  								<input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+  							</div>
+  						</div>
+  						<div class="form-group">
+  							<div class="col-sm-offset-2 col-sm-8">
+  								<div class="checkbox">
+  									<label>
+  										<input type="checkbox"> 记住账号和密码
+  									</label>
   								</div>
   							</div>
   						</div>
+  						<div class="form-group">
+  							<div class="col-sm-offset-2 col-sm-10">
+  								<button type="submit" class="btn btn-success btn-xs">登陆</button>
+  							</div>
+  						</div>
+  					</form>
+  				</div>
+  				<div class="modal-footer">
+  					<p><span class="pull-left">快捷登陆:</span><a href=""><img src="imgs/qq_login.gif" ></a>
+  						<a href=""><img src="imgs/wechat_login.png" ></a></p>
   					</div>
   				</div>
   			</div>
   		</div>
-  		<div class="body">
-  			<div class="container">
-  				<div class="swiper-container1" style="overflow:hidden">
-  					<div class="swiper-wrapper">
-  						<div class="swiper-slide col-xs-2"><p><img src="imgs/0.jpg" class="img-responsive center-block" alt="Responsive image"></p><p class="text-center">互联网技术-揭秘Java网络爬虫程序原理</p></div>
-  						<div class="swiper-slide col-xs-2"><p><img src="imgs/1.jpg" class="img-responsive center-block" alt="Responsive image"></p><p class="text-center">前端2.0课程震撼来袭<br>2016课程体系新升级</p></div>
-  						<div class="swiper-slide col-xs-2"><p><img src="imgs/2.jpg" class="img-responsive center-block" alt="Responsive image"></p><p class="text-center">“1024程序员节”课程狂欢<br>秒杀专场，直接抵学费</p></div>
-  						<div class="swiper-slide col-xs-2"><p><img src="imgs/3.jpg" class="img-responsive center-block" alt="Responsive image"></p><p class="text-center">“1024程序员节”课程狂欢<br>秒杀专场，直接抵学费</p></div>
-  						<div class="swiper-slide col-xs-2"><p><img src="imgs/4.jpg" class="img-responsive center-block" alt="Responsive image"></p><p class="text-center">“1024程序员节”课程狂欢<br>秒杀专场，直接抵学费</p></div>
-  						<div class="swiper-slide col-xs-2"><p><img src="imgs/5.jpg" class="img-responsive center-block" alt="Responsive image"></p><p class="text-center">“1024程序员节”课程狂欢<br>秒杀专场，直接抵学费</p></div>
-  					</div>
-  					<!-- Add Pagination -->
-  					<div class="swiper-pagination"></div>
-  				</div>
-  			</div>
-  			<div class="container">
-  				<div class="row body-height">
-  					<div class="col-md-3 col-sm-3 col-xs-3 img-box hidden-xs">
-  						<img src="imgs/c2.png" class="img-responsive" alt="Responsive image">
-  					</div>
-  					<div class="col-md-9 col-sm-9 col-xs-12">
-  						<div class="row">
-  							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon1.png" class="img-responsive center-block" alt="Responsive image"><h3 >课程介绍</h3></a></div>
-  							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon2.png" class="img-responsive center-block" alt="Responsive image"><h3 >课程大纲</h3></a></div>
-  							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon3.png" class="img-responsive center-block" alt="Responsive image"><h3 >开班时间</h3></a></div>
-  							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon4.png" class="img-responsive center-block" alt="Responsive image"><h3 >师资库</h3></a></div>
-  						</div>
-  						<div class="row">
-  							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon5.png" class="img-responsive center-block" alt="Responsive image"><h3 >就业薪资</h3></a></div>
-  							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon6.png" class="img-responsive center-block" alt="Responsive image"><h3 >班级活动</h3></a></div>
-  							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon7.png" class="img-responsive center-block" alt="Responsive image"><h3 >公开课</h3></a></div>
-  							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon8.png" class="img-responsive center-block" alt="Responsive image"><h3 >视频下载</h3></a></div>
-  						</div>
-  					</div>
-  				</div>
-  				<div class="row city-box">
-  					<div class="citys">
-  						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg cur"></div><span>北京</span></a>
-  						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>上海</span></a>
-  						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>广州</span></a>
-  						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>深圳</span></a>
-  						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>武汉</span></a>
-  						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>郑州</span></a>
-  						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>西安</span></a>
-  						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>长沙</span></a>
-  						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>重庆</span></a>
-  						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>济南</span></a>
-  						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>杭州</span></a>
-  						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>南京</span></a>
-  					</div>
-  					<div class="citys-info">  
-  						<div class="city-info cur"> 
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>UI设计 基础班 2016-11-11 火热报名中</a></li></ul>
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>UI设计 就业班 2016-11-11 火热报名中</a></li></ul>
-  						</div>
-  						<div class="city-info"> 
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>UI设计 基础班 2016-11-12 火热报名中</a></li></ul>
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>UI设计 就业班 2016-11-13 火热报名中</a></li></ul>
-  						</div>
-  						<div class="city-info"> 
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>UI设计 就业班 2016-11-14 火热报名中</a></li></ul>
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>UI设计 就业班 2016-11-15 火热报名中</a></li></ul>
-  						</div>
-  						<div class="city-info"> 
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  						</div>
-  						<div class="city-info"> 
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  						</div>
-  						<div class="city-info"> 
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  						</div>
-  						<div class="city-info"> 
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  						</div>
-  						<div class="city-info"> 
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  						</div>
-  						<div class="city-info"> 
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  						</div>
-  						<div class="city-info"> 
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  						</div>
-  						<div class="city-info"> 
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  						</div>
-  						<div class="city-info"> 
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
-  						</div>
-  					</div>
-  				</div>
-  			</div>
+  		<div class="tips hidden-xs bg-primary">
+  			<p class="tip pull-left">冰糖品牌：  冰糖程序员  |  桃花岛</p>
+  			<p class="tip pull-right">改变中国IT教育，我们正在行动     全国咨询热线：400-400-4000
+  				冰糖播客</p>
   		</div>
+		<div class="header-nav">
+			<nav class="navbar navbar-inverse hd-nav" role="navigation">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<h1>冰糖学院</h1>
+						</a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#">免费学习资源</a></li>
+							<li><a href="#">课程中心</a></li>
+							<li><a href="#">原创教材</a></li>
+							<li><a href="#">学员故事</a></li>
+							<li><a href="#">冰糖社区</a></li>
+						</ul>
+						<form class="navbar-form navbar-right " role="search">
+							<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#login">登陆</button>
+							<button type="button" class="btn btn-info btn-sm"><a href="register.html">免费注册</a></button>
+						</form>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+		</div>
+		<div class="header-body">
+			<div class="container hd-container">
+				<div class="row">
+					<div class="col-md-9 col-xs-12">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide"><img src="imgs/banner0.jpg" class="img-responsive" alt="Responsive image"></div>
+								<div class="swiper-slide"><img src="imgs/banner1.jpg" class="img-responsive" alt="Responsive image"></div>
+								<div class="swiper-slide"><img src="imgs/banner2.jpg" class="img-responsive" alt="Responsive image"></div>
+								<div class="swiper-slide"><img src="imgs/banner3.jpg" class="img-responsive" alt="Responsive image"></div>
+							</div>
+							<!-- Add Pagination -->
+							<div class="swiper-pagination"></div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-12 hidden-xs">
+						<div class="panel panel-primary hd-body-slide">
+							<div class="panel-heading">信息港</div>
+							<div class="panel-body xinxi">
+								<div class="list-group">
+									<a href="#" class="list-group-item first"> 2016年冰糖学院各学科学费价格表</a>
+									<a href="#" class="list-group-item">全国新开校区，前三期立减1998！</a>
+									<a href="#" class="list-group-item">零基础，1元上30天完整IT入门课程</a>
+									<a href="#" class="list-group-item">UI设计打造会代码的全能设计师</a>
+									<a href="#" class="list-group-item">打造Python前后端全栈开发工程师</a>
+									<a href="#" class="list-group-item">Android入门易成长快，岂止高薪！</a>
+									<a href="#" class="list-group-item">PHP助你快速入门，就业冲击10k+</a>
+									<a href="#" class="list-group-item">iOS，4个月即可引领IT“薪”革命</a>
+									<a href="#" class="list-group-item last">延续40年经典—永不过时的C/C++</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="body">
+			<div class="container">
+				<div class="swiper-container1" style="overflow:hidden">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide col-xs-2"><p><img src="imgs/0.jpg" class="img-responsive center-block" alt="Responsive image"></p><p class="text-center">互联网技术-揭秘Java网络爬虫程序原理</p></div>
+						<div class="swiper-slide col-xs-2"><p><img src="imgs/1.jpg" class="img-responsive center-block" alt="Responsive image"></p><p class="text-center">前端2.0课程震撼来袭<br>2016课程体系新升级</p></div>
+						<div class="swiper-slide col-xs-2"><p><img src="imgs/2.jpg" class="img-responsive center-block" alt="Responsive image"></p><p class="text-center">“1024程序员节”课程狂欢<br>秒杀专场，直接抵学费</p></div>
+						<div class="swiper-slide col-xs-2"><p><img src="imgs/3.jpg" class="img-responsive center-block" alt="Responsive image"></p><p class="text-center">“1024程序员节”课程狂欢<br>秒杀专场，直接抵学费</p></div>
+						<div class="swiper-slide col-xs-2"><p><img src="imgs/4.jpg" class="img-responsive center-block" alt="Responsive image"></p><p class="text-center">“1024程序员节”课程狂欢<br>秒杀专场，直接抵学费</p></div>
+						<div class="swiper-slide col-xs-2"><p><img src="imgs/5.jpg" class="img-responsive center-block" alt="Responsive image"></p><p class="text-center">“1024程序员节”课程狂欢<br>秒杀专场，直接抵学费</p></div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row body-height">
+					<div class="col-md-3 col-sm-3 col-xs-3 img-box hidden-xs">
+						<img src="imgs/c2.png" class="img-responsive" alt="Responsive image">
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-12">
+						<div class="row">
+							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon1.png" class="img-responsive center-block" alt="Responsive image"><h3 >课程介绍</h3></a></div>
+							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon2.png" class="img-responsive center-block" alt="Responsive image"><h3 >课程大纲</h3></a></div>
+							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon3.png" class="img-responsive center-block" alt="Responsive image"><h3 >开班时间</h3></a></div>
+							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon4.png" class="img-responsive center-block" alt="Responsive image"><h3 >师资库</h3></a></div>
+						</div>
+						<div class="row">
+							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon5.png" class="img-responsive center-block" alt="Responsive image"><h3 >就业薪资</h3></a></div>
+							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon6.png" class="img-responsive center-block" alt="Responsive image"><h3 >班级活动</h3></a></div>
+							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon7.png" class="img-responsive center-block" alt="Responsive image"><h3 >公开课</h3></a></div>
+							<div class="list col-md-3 col-sm-3 col-xs-3"><a><img src="imgs/icon8.png" class="img-responsive center-block" alt="Responsive image"><h3 >视频下载</h3></a></div>
+						</div>
+					</div>
+				</div>
+				<div class="row city-box">
+					<div class="citys">
+						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg cur"></div><span>北京</span></a>
+						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>上海</span></a>
+						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>广州</span></a>
+						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>深圳</span></a>
+						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>武汉</span></a>
+						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>郑州</span></a>
+						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>西安</span></a>
+						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>长沙</span></a>
+						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>重庆</span></a>
+						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>济南</span></a>
+						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>杭州</span></a>
+						<a class="col-md-1 col-xs-2" href="#"><div class="city-bg"></div><span>南京</span></a>
+					</div>
+					<div class="citys-info">  
+						<div class="city-info cur"> 
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>UI设计 基础班 2016-11-11 火热报名中</a></li></ul>
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>UI设计 就业班 2016-11-11 火热报名中</a></li></ul>
+						</div>
+						<div class="city-info"> 
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>UI设计 基础班 2016-11-12 火热报名中</a></li></ul>
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>UI设计 就业班 2016-11-13 火热报名中</a></li></ul>
+						</div>
+						<div class="city-info"> 
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>UI设计 就业班 2016-11-14 火热报名中</a></li></ul>
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>UI设计 就业班 2016-11-15 火热报名中</a></li></ul>
+						</div>
+						<div class="city-info"> 
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+						</div>
+						<div class="city-info"> 
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+						</div>
+						<div class="city-info"> 
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+						</div>
+						<div class="city-info"> 
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+						</div>
+						<div class="city-info"> 
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+						</div>
+						<div class="city-info"> 
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+						</div>
+						<div class="city-info"> 
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+						</div>
+						<div class="city-info"> 
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+						</div>
+						<div class="city-info"> 
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+							<ul><li><i class="fa fa-volume-up" aria-hidden="true"></i> <a>该校区尚未开设基础班课程，敬请期待！</a></li></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  		<div class="footer">
-  			<nav class="navbar navbar-inverse navbar-fixed-bottom  visible-xs visible-sm ft-nav" role="navigation">
-  				<div class="container">
-  					<div class="row">
-  						<div class="col-xs-4 ft-list">
-  							<a href="#"><i class="fa fa-home fa-fw fa-3x" aria-hidden="true"></i></a>
-  						</div>
-  						<div class="col-xs-4 ft-list">
-  							<i class="fa fa-user fa-3x" aria-hidden="true"></i>
-  						</div>
-  						<div class="col-xs-4 ft-list">
-  							<i class="fa fa-cog fa-fw fa-3x" aria-hidden="true"></i>
-  						</div>
-  					</div>
-  				</div>
-  			</nav>
-  			<div class=container>
-  				<nav class="navbar navbar-inverse navbar-bottom ft-nav hidden-sm hidden-xs ft-nav1" role="navigation">
-  					<div class="row">
-  						<div class="col-xs-3">
-  							<ul>
-  								<li class="ft-h"><a>关于我们</a></li>
-  								<li><a>冰糖学院</a></li>
-  								<li><a>加入冰糖</a></li>
-  								<li><a>联系冰糖</a></li>
-  							</ul>
-  						</div>
-  						<div class="col-xs-3">
-  							<ul>
-  								<li class="ft-h"><a>关于我们</a></li>
-  								<li><a>冰糖学院</a></li>
-  								<li><a>加入冰糖</a></li>
-  								<li><a>联系冰糖</a></li>
-  							</ul>
-  						</div>
-  						<div class="col-xs-3">
-  							<ul>
-  								<li class="ft-h"><a>关于我们</a></li>
-  								<li><a>冰糖学院</a></li>
-  								<li><a>加入冰糖</a></li>
-  								<li><a>联系冰糖</a></li>
-  							</ul>
-  						</div>
-  						<div class="col-xs-3">
-  							<ul>
-  								<li class="ft-h"><a>关于我们</a></li>
-  								<li><a>冰糖学院</a></li>
-  								<li><a>加入冰糖</a></li>
-  								<li><a>联系冰糖</a></li>
-  							</ul>
-  						</div>
-  					</div>
-  				</nav>
-  			</div>
-  		</div>
+		<div class="footer">
+			<nav class="navbar navbar-inverse navbar-fixed-bottom  visible-xs visible-sm ft-nav" role="navigation">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-4 ft-list">
+							<a href="javascript::"><i class="fa fa-home fa-fw fa-3x" aria-hidden="true"></i></a>
+						</div>
+						<div class="col-xs-4 ft-list">
+							<i class="fa fa-user fa-3x" aria-hidden="true"></i>
+						</div>
+						<div class="col-xs-4 ft-list">
+							<i class="fa fa-cog fa-fw fa-3x" aria-hidden="true"></i>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<div class=container>
+				<nav class="navbar navbar-inverse navbar-bottom ft-nav hidden-sm hidden-xs ft-nav1" role="navigation">
+					<div class="row">
+						<div class="col-xs-3">
+							<ul>
+								<li class="ft-h"><a>关于我们</a></li>
+								<li><a>冰糖学院</a></li>
+								<li><a>加入冰糖</a></li>
+								<li><a>联系冰糖</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-3">
+							<ul>
+								<li class="ft-h"><a>关于我们</a></li>
+								<li><a>冰糖学院</a></li>
+								<li><a>加入冰糖</a></li>
+								<li><a>联系冰糖</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-3">
+							<ul>
+								<li class="ft-h"><a>关于我们</a></li>
+								<li><a>冰糖学院</a></li>
+								<li><a>加入冰糖</a></li>
+								<li><a>联系冰糖</a></li>
+							</ul>
+						</div>
+						<div class="col-xs-3">
+							<ul>
+								<li class="ft-h"><a>关于我们</a></li>
+								<li><a>冰糖学院</a></li>
+								<li><a>加入冰糖</a></li>
+								<li><a>联系冰糖</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
 
-  		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-  		<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  		<script src="js/swiper-3.4.0.jquery.min.js"></script>
-  		<script src="js/index.js"></script>
-  	</body>
-  	</html>
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="js/swiper-3.4.0.jquery.min.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+	</html>
