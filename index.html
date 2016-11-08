@@ -4,10 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
-	<link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/swiper-3.4.0.min.css">
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/animate.css/3.1.0/animate.min.css">
 	<!--[if lt IE 9]>
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -34,7 +35,6 @@
   							<h1>冰糖学院</h1>
   						</a>
   					</div>
-
   					<!-- Collect the nav links, forms, and other content for toggling -->
   					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
   						<ul class="nav navbar-nav">
@@ -44,6 +44,57 @@
   							<li><a href="#">学员故事</a></li>
   							<li><a href="#">冰糖社区</a></li>
   						</ul>
+  						<form class="navbar-form navbar-right " role="search">
+  							<button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#login">登陆</button>
+  							<button type="button" class="btn btn-info btn-sm ">免费注册</button>
+  							<!-- Modal -->
+  							<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  								<div class="modal-dialog login">
+  									<div class="modal-content">
+  										<div class="modal-header">
+  											<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+  											<h4 class="modal-title text-center" id="myModalLabel">冰糖学院 欢迎您登陆</h4>
+  										</div>
+  										<div class="modal-body">
+  											<form class="form" role="form">
+  											<div class="">
+  													<label for="inputEmail3" class="col-sm-2 control-label text-right">账号</label>
+  													<div class="col-sm-10">
+  														<input type="text" class="form-control" id="inputEmail3" placeholder="账号/手机号/邮箱">
+  													</div>
+  												</div>
+  												<div class="">
+  													<label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+  													<div class="col-sm-10">
+  														<input type="password" class="form-control" id="inputPassword3" placeholder="密码">
+  													</div>
+  												</div>
+  												<div class="">
+  													<div class="col-sm-offset-2 col-sm-10">
+  														<div class="checkbox">
+  															<label>
+  																<input type="checkbox"> 记住账号和密码
+  															</label>
+  														</div>
+  													</div>
+  												</div>
+  												<div> 
+  													
+  												</div>
+  											</form>
+
+  										</div>
+  										<div class="modal-footer"> 
+  											<div class="col-sm-offset-2 col-sm-10">
+  															<button type="button" class="btn btn-success btn-sm" data-dismiss="modal">登陆</button>
+  											<button type="button" class="btn btn-info btn-sm">免费注册</button>
+  													</div>
+  										</div>
+
+  									</div>
+  								</div>
+  							</div>
+  						</form>
   					</div><!-- /.navbar-collapse -->
   				</div><!-- /.container-fluid -->
   			</nav>
@@ -69,7 +120,7 @@
   							<div class="panel-heading">信息港</div>
   							<div class="panel-body xinxi">
   								<div class="list-group">
-  									<a href="#" class="list-group-item first"> 2016年传智各学科学费价格表</a>
+  									<a href="#" class="list-group-item first"> 2016年冰糖学院各学科学费价格表</a>
   									<a href="#" class="list-group-item">全国新开校区，前三期立减1998！</a>
   									<a href="#" class="list-group-item">零基础，1元上30天完整IT入门课程</a>
   									<a href="#" class="list-group-item">UI设计打造会代码的全能设计师</a>
@@ -245,8 +296,8 @@
   			</div>
   		</div>
 
-  		<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-  		<script src="js/bootstrap.min.js"></script>
+  		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  		<script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   		<script src="js/swiper-3.4.0.jquery.min.js"></script>
   		<script src="js/index.js"></script>
   	</body>
